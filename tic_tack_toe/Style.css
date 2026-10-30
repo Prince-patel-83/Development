@@ -1,0 +1,125 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:  Arial, sans-serif;
+}
+
+html , 
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+    background-color: #334155;
+}
+
+main h1{
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+section{
+
+    display: grid;
+    grid-template-columns: repeat(3 , minmax(100px , 1fr));
+    grid-template-rows: repeat(3 , minmax(100px , 1fr));
+    /* background-color: #fff; */
+}
+
+.box {
+
+    height: 100px ;
+    width: 100px ;
+    font-size: 60px;
+    font-weight:400;
+    border: 2px solid white ;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.box:nth-child(3n){
+    border-right: none;
+}
+
+.box:nth-child(3n+1){
+    border-left: none;
+}
+
+.box:nth-child(n+7){
+    border-bottom:none;
+}
+
+.box:first-child ,
+.box:nth-child(2),
+.box:nth-child(3)
+{
+    border-top:none;
+}
+
+.players{
+    margin-top: 20px ;
+}
+.players h2{
+    font-size: 20px;
+    font-weight: 100;
+    color: #fff ;
+    display: inline ;
+    margin: 10px ;
+    padding: 10px;
+}
+
+button{
+
+    margin: 20px ;
+    padding:  10px 25px ;
+    font-size: 20px ;
+    border: none ;
+    border-radius: 5px ;
+    background-color: rgb(127, 31, 217) ;
+    color: #fff ;
+    cursor: pointer;
+}
+
+
+.player1{
+    background-color: red;
+}
+
+.player2{
+    background-color: blue;
+}
+
+.turn h2{
+    font-size: 20px;
+    font-weight: 100;
+    color: #000000 ;
+    margin-top: 20px ;
+    padding: 10px 40px;
+    background-color: yellowgreen;
+}
+
+.StartModal{
+    position: absolute;
+    height: 100vh;
+    width: 100vh;
+    background-color: #334155f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
